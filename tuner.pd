@@ -1,6 +1,6 @@
-#N canvas 12 34 232 183 10;
+#N canvas 12 34 229 186 10;
 #X obj 13 127 hsl 200 15 -600 600 0 0 empty \$0-dev deviation_(cent)
--2 -8 0 10 -262130 -1 -1 7093 1;
+-2 -8 0 10 -262130 -1 -1 19842 1;
 #X obj 10 58 hradio 16 1 1 13 \$0-note empty target_note 0 25 0 10
 -262130 -1 -1 0;
 #X text 11 43 c;
@@ -13,13 +13,12 @@
 #X text 108 115 |;
 #X text 108 102 0;
 #X obj 161 111 nbx 5 14 -600 600 0 0 empty \$0-dev empty 0 -8 0 10
--262130 -1 -1 -172.266 256;
+-262130 -1 -1 596.484 256;
 #X obj 13 158 hsl 200 15 -50 12 0 0 empty \$0-vol input_volume_(dB)
--2 -6 0 10 -262130 -1 -1 6079 1;
+-2 -6 0 10 -262130 -1 -1 4577 1;
 #X obj 172 76 nbx 4 14 400 500 0 1 \$0-root empty |> -15 6 0 10 -262130
 -1 -1 440 256;
 #X text 189 43 b;
-#X text 124 14 grrrr.org \, 2016;
 #N canvas 251 34 265 223 (subpatch) 0;
 #X obj 32 21 adc~;
 #X obj 32 80 sigmund~;
@@ -124,5 +123,6 @@
 #X connect 10 0 6 0;
 #X connect 11 0 7 0;
 #X restore 72 13 pd;
-#X obj 9 10 cnv 15 10 25 empty empty TUNER 8 12 0 14 -228856 -66577
+#X obj 9 10 cnv 15 210 25 empty empty TUNER 8 12 0 14 -228856 -66577
 0;
+#X text 120 16 grrrr.org \, 2016;
