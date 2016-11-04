@@ -1,6 +1,6 @@
 #N canvas 12 34 229 205 10;
 #X obj 13 127 hsl 200 25 -600 600 0 0 empty \$0-dev deviation_(cent)
--2 -8 0 10 -262144 -1 -1 16119 1;
+-2 -8 0 10 -228856 -1 -1 4975 1;
 #X obj 10 58 hradio 16 1 1 13 \$0-note empty target_note 0 25 0 10
 -262130 -1 -1 0;
 #X text 11 43 c;
@@ -10,10 +10,10 @@
 #X text 125 42 g;
 #X text 158 43 a;
 #X text 205 43 c;
-#X obj 169 111 nbx 4 14 -600 600 0 0 empty \$0-dev empty 0 -8 0 10
--262144 -1 -1 372 256;
+#X obj 170 111 nbx 4 14 -600 600 0 0 empty \$0-dev empty 0 -8 0 10
+-233017 -1 -1 -300 256;
 #X obj 13 175 hsl 200 15 -50 12 0 0 empty \$0-vol input_volume_(dB)
--2 -8 0 10 -262144 -1 -1 3214 1;
+-2 -8 0 10 -228856 -1 -1 0 1;
 #X obj 172 76 nbx 4 14 400 500 0 1 \$0-root empty |> -13 6 0 10 -262130
 -1 -1 440 256;
 #X text 189 43 b;
@@ -93,7 +93,7 @@
 #X connect 26 0 21 1;
 #X connect 27 0 13 0;
 #X restore 99 157 pd tuning;
-#N canvas 67 246 211 297 color 0;
+#N canvas 633 286 211 297 color 0;
 #X obj 27 33 inlet;
 #X obj 99 32 inlet;
 #X obj 27 60 abs;
@@ -112,8 +112,8 @@
 #X obj 126 261 s \$0-vol;
 #X msg 156 198 6;
 #X obj 126 173 select 0 1;
-#X msg 126 198 0;
-#X msg 27 200 0;
+#X msg 126 198 10;
+#X msg 27 200 10;
 #X connect 0 0 2 0;
 #X connect 1 0 7 0;
 #X connect 2 0 3 0;
@@ -173,4 +173,4 @@
 #X text 120 16 grrrr.org \, 2016;
 #X obj 112 119 cnv 1 1 35 empty empty 0 -2 -8 0 12 -1 -66577 0;
 #X obj 170 159 nbx 4 14 -100 100 0 0 empty \$0-vol empty 0 -8 0 10
--262144 -1 -1 -39.985 256;
+-233017 -1 -1 0 256;
